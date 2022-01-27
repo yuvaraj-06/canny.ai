@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Canny Works</title>
+  </head>
+  <body>
+    <h1> Sample Testing </h1>
+    <p> Please Fill in the necessaries in the form below</p>
+    <form action={{ url_for('grade') }} method="post" enctype="multipart/form-data" name="simple form"> 
+	<label for="data json">Json File:</label>
+  	<input type="file" id="data json" name="data json" required><br><br>
+  	<label for="maximum marks">Maximum Marks:</label>
+  	<input type="text" id="max marks" name="max marks" value="10"><br><br>
+	<label for="integer marking">Integer Marking:</label>
+  	<input type="text" id="integer marking" name="integer marking" value="True"><br><br>
+	<label for="relative marking">Relative Marking:</label>
+  	<input type="text" id="relative marking" name="relative marking" value="True"><br><br>
+	<label for="mail id">Mail Results to:</label>
+  	<input type="text" id="mail id" name="mail id" value="your-mailid-@any.com"><br><br>
+	<input type="submit" value="Canny Evaluate">
+  </form>
+  </body>
+</html>

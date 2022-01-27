@@ -1,0 +1,37 @@
+<html>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home_alt_style.css') }}">
+    <div class="login-box">
+        <h2>Home</h2>
+        <form action={{ url_for('grade') }} method="post" enctype="multipart/form-data" name="simple form"> 
+          <div class="user-box">
+            <input type="file" id="data json" name="data json">
+            <label for="data json">Json File:</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="max marks" name="max marks" required>
+            <label for="maximum marks">Maximum Marks:</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="integer marking" name="integer marking" required>
+            <label for="integer marking">Integer Marking:</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="relative marking" name="relative marking" required>
+            <label for="relative marking">Relative Marking:</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="mail id" name="mail id" required>
+            <label for="mail id">Mail Results to:</label>
+          </div>
+          <a onclick="this.parentNode.submit();">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Canny Evaluate
+          </a>
+        </form>
+      </div>
+    
+    
+</html>
